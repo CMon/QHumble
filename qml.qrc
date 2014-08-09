@@ -1,5 +1,14 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/Loading.qml</file>
+        <file>qml/LoadingImageItem.qml</file>
+        <file>qml/assets/images/loading.png</file>
+        <file>qml/PageLogin.qml</file>
+        <file>qml/SimpleViewManager.qml</file>
+        <file>qml/assets/js/SimpleViewManager.js</file>
+        <file>qml/PageBundles.qml</file>
+        <file>qml/PageCaptcha.qml</file>
+        <file>qml/assets/js/CaptchaInjection.js</file>
     </qresource>
 </RCC>

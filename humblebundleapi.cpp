@@ -83,6 +83,7 @@ void HumbleBundleAPI::login()
 	request.setRawHeader("Accept",         "application/json");
 	request.setRawHeader("Accept-Charset", "utf-8");
 	request.setRawHeader("Keep-Alive",     "true");
+	request.setRawHeader("content-type",   "application/x-www-form-urlencoded");
 
 	networkAccessManager_->post(request, queryUrl.toString(QUrl::FullyEncoded).toUtf8());
 }
@@ -152,7 +153,7 @@ void HumbleBundleAPI::onFinished(QNetworkReply * reply)
 
 	if (reply->error() != QNetworkReply::NoError) {
 		if (loggedInReply) isLoggedIn_ = false;
-		qDebug() << reply->url() << "error: " << reply->errorString();
+		qDebug() << reply->url() << "error(" << reply->error() <<"): " << reply->errorString() << "content: " << reply->readAll();
 		return;
 	}
 
