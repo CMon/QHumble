@@ -62,7 +62,7 @@ Rectangle {
         id: bundlesListDelegate
         Item {
             width: parent.width
-            height: 50
+            height: 70
 
             Rectangle {
                 id: backgroundRect
