@@ -10,5 +10,6 @@
         <file>qml/PageBundles.qml</file>
         <file>qml/PageCaptcha.qml</file>
         <file>qml/assets/js/CaptchaInjection.js</file>
+        <file>qml/Scrollbar.qml</file>
     </qresource>
 </RCC>
