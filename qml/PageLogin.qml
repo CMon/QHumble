@@ -30,16 +30,6 @@ Rectangle {
         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhr.setRequestHeader("Content-length", postData.length)
 
-
-
-        if (storeCredentialsCheck.checked) {
-            Settings.setUsername(username);
-            Settings.setPassword(password);
-        }
-
-
-
-
         xhr.onreadystatechange = function() {
             console.log("Foo" + xhr.responseText)
 
@@ -70,7 +60,6 @@ Rectangle {
             }
             pageLoginRect.loading = false;
         }
-        console.log(encodedUsername)
         xhr.send(postData);
     }
 
