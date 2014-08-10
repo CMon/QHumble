@@ -8,7 +8,6 @@
         <file>qml/SimpleViewManager.qml</file>
         <file>qml/assets/js/SimpleViewManager.js</file>
         <file>qml/PageBundles.qml</file>
-        <file>qml/PageCaptcha.qml</file>
         <file>qml/assets/js/CaptchaInjection.js</file>
         <file>qml/Scrollbar.qml</file>
     </qresource>
