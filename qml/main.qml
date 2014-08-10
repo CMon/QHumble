@@ -7,13 +7,12 @@ ApplicationWindow {
     height: 480
     title: qsTr("Hello World")
 
-    menuBar: MenuBar {
-        Menu {
-            title: qsTr("File")
-            MenuItem {
-                text: qsTr("Exit")
-                onTriggered: Qt.quit();
-            }
+    toolBar: ToolBar {
+        height: 70
+        Button {
+            text: qsTr("Back")
+            onClicked: mainViewManger.previousView()
+            height: 70
         }
     }
 
